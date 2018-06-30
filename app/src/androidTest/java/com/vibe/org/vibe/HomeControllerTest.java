@@ -7,19 +7,16 @@ import android.widget.RelativeLayout;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import static  org.mockito.Mockito.*;
+import org.mockito.runners.MockitoJUnitRunner;
 
-import org.mockito.invocation.InvocationOnMock;
-import  org.mockito.runners.MockitoJUnitRunner;
-import org.mockito.stubbing.Answer;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.when;
 
 //test if the fragment is launched or not
 @RunWith(MockitoJUnitRunner.class)
@@ -72,4 +69,3 @@ public class HomeControllerTest {
     }
 }
 
-}
