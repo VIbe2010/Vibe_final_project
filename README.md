@@ -1,7 +1,7 @@
-# Vibe
+
 # SE-Final-Project
 
-## VIbe
+## Vibe
     An Android app 
     `All Documentation of the Project including proposal, SRS and SDS 
     can be found at  https://github.com/VIbe2010/SE-Documentation`
