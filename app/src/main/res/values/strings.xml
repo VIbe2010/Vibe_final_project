@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Vibe</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login In</string>
+    <string name= "username_error"></string>
+    <string name= "password_error"></string>
+    <string name= "login_failed"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="register">Register</string>
+    <string name="timeout">Timeout Error:The time finished.</string>
+    <string name="nointernet">NoInternet Error: There is no internet accesss.</string>
+    <string name="unknownError">Error:something wrong with the access</string>
+    <string name="reset">Reset</string>
+    <string name="resetPass">reset</string>
+    <string name="place_register">Place Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

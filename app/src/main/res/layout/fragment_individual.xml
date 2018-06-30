@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/colorSecond"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/ProPic"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="false"
+            android:background="@android:color/black"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/propic"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProPic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="UserName"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:capitalize="characters"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="152dp"
+            android:layout_height="32dp"
+            android:elevation="0dp"
+            android:text="Edit Profile"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="7dp"
+            android:padding="5dp"
+            android:alpha="0.9"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="18dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="#fff"
+            android:layout_below="@+id/editProfile"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="50dp" />
+
+        <Button
+            android:id="@+id/go_button"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            android:text="GO"
+            android:textColor="@android:color/background_light"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:alpha="0.8"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/linearLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RecyclerView"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/background_dark"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

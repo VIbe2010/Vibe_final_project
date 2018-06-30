@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vibe.org.vibe.LoginFragmentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="35dp"
+        android:background="@color/colorSecondaryDark"
+        android:id="@+id/fixed">
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp">
+        <EditText
+            android:drawablePadding="10dp"
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="USERNAME"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"/>
+        <EditText
+            android:drawablePadding="10dp"
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:id="@+id/confirmPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="CONFIRM-PASSWORD"
+            android:inputType="textPassword"/>
+        <TextView
+            android:textColor="@color/red"
+            android:paddingRight="190dp"
+            android:id="@+id/error"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:drawablePadding="2dp"
+            android:layout_width="350dp"
+            android:textSize="15dp"
+            android:autoLink="all"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_marginTop="70dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/register"
+            android:textColor="@color/colorLight"
+            android:layout_marginRight="110dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
