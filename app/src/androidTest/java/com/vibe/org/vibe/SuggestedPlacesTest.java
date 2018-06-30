@@ -1,33 +1,20 @@
 package com.vibe.org.vibe;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.test.rule.ActivityTestRule;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
 
 import java.util.ArrayList;
 
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
-import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.junit.Assert.assertNotNull;
 
 public class SuggestedPlacesTest {
 
@@ -35,8 +22,8 @@ public class SuggestedPlacesTest {
     SuggestedPlaces suggestedPlaces;
 
     @Rule
-    public ActivityTestRule<TestActivity> mActivityTestRule = new ActivityTestRule<>(TestActivity.class);
-    private TestActivity mActivity =  null;
+    public ActivityTestRule<TestActivitySuggest> mActivityTestRule = new ActivityTestRule<>(TestActivitySuggest.class);
+    private TestActivitySuggest mActivity =  null;
     private Context context;
 
 
@@ -46,6 +33,7 @@ public class SuggestedPlacesTest {
         mActivity = mActivityTestRule.getActivity();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Test
     public void testLaunch(){
         RelativeLayout rlContainer = (RelativeLayout) mActivity.findViewById(R.id.test_container);
