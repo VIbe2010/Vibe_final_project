@@ -2,9 +2,9 @@
     <string name="app_name">Vibe</string>
     <string name="action_settings">Settings</string>
     <string name="login">Login In</string>
-    <string name= "username_error"></string>
-    <string name= "password_error"></string>
-    <string name= "login_failed"></string>
+    <string name= "username_error">Enter username</string>
+    <string name= "password_error">Enter valid password valid more than 4 character</string>
+    <string name= "login_failed">login failed</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="register">Register</string>
